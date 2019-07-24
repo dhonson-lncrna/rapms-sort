@@ -16,7 +16,7 @@ def rapms_sort(filename, neg_cap2, exp_cap2):
     # Import pandas and the dataset as a DataFrame
     import pandas as pd
                
-    rapms = pd.read_csv('19.07.22_U1-RAP-MS.csv')
+    rapms = pd.read_csv(filename)
     
     #Filter out known contaminants (keratin, etc.)
     for i in rapms['Protein IDs']:
